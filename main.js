@@ -3,8 +3,8 @@ let listtask = document.getElementById("list-task");
 let btn = document.getElementById("btnAdd");
 let content = [];
 
-if (localStorage.getItem("product") !== null) {
-    content = JSON.parse(localStorage.getItem("product"))
+if (localStorage.getItem("zeyad") !== null) {
+    content = JSON.parse(localStorage.getItem("zeyad"))
     show()
 }
 btn.onclick = function () {
@@ -28,7 +28,7 @@ function show() {
             </div>
         `
     }
-    localStorage.setItem("product", JSON.stringify(content))
+    localStorage.setItem("zeyad", JSON.stringify(content))
     document.getElementById("list-task").innerHTML = data
     let btndel = document.getElementById("del");
     if(content.length > 0){
